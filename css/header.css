@@ -1,0 +1,33 @@
+.header {
+  padding-block-start: 1.5rem;
+  padding-block-end: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.header-navigation ul {
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.header-navigation ul li {
+  list-style: none;
+}
+
+@supports not (backdrop-filter: blur(5px)) {
+  .header {
+    background: var(--accent);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline-end: 5rem;
+    padding-inline-start: 5rem;
+  }
+}

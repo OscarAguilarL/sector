@@ -1,18 +1,23 @@
+@import "./wrapper.css";
+@import "./header.css";
+@import "./link.css";
+@import "./sticky.css";
+
 :root {
   font-size: 16px;
   --baseFont: "Poppins", sans-serif;
   --bg: #0b1d26;
   --white: #ffffff;
   --accent: #fdd130;
-  --headline1: 500 5.5rem/6.25rem --baseFont;
-  --headline2: 600 4rem / normal --baseFont;
-  --bold: 700 1.125rem/2rem --baseFont;
-  --medium: 500 1.125rem/2rem --baseFont;
-  --body: 400 1.125rem/2rem --baseFont;
-  --button: 700 1.125rem / normal --baseFont;
+  --headline1: 500 5.5rem/6.25rem var(--baseFont);
+  --headline2: bold 4rem / normal var(--baseFont);
+  --bold: bold 1.125rem/2rem var(--baseFont);
+  --medium: 500 1.125rem/2rem var(--baseFont);
+  --body: normal 1.125rem/2rem var(--baseFont);
+  --button: bold 1.125rem / normal var(--baseFont);
 }
 
 body {
   font-family: var(--baseFont);
-  background: var(--bg);
+  /* background: var(--bg); */
 }
