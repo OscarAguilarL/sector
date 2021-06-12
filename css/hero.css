@@ -1,0 +1,29 @@
+.hero {
+  inline-size: 100%;
+  block-size: 120vh;
+  background-image: linear-gradient(
+      180deg,
+      rgba(11, 29, 38, 0) 0%,
+      #0b1d26 100%
+    ),
+    url("../images/hero.png");
+  background-size: 300%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.hero-description {
+  max-inline-size: 59.375rem;
+  text-align: center;
+}
+
+.hero-description h1 {
+  font: var(--headline1);
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    block-size: 180vh;
+    background-size: 100%;
+  }
+}
