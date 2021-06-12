@@ -12,18 +12,52 @@
   background-repeat: no-repeat;
 }
 
-.hero-description {
-  max-inline-size: 59.375rem;
-  text-align: center;
+.hero-content {
+  display: flex;
+  align-items: flex-start;
+  margin-inline-end: 2rem;
+  margin-inline-start: 2rem;
+  /* margin-block-start: 8.625rem; */
 }
 
 .hero-description h1 {
-  font: var(--headline1);
+  font-family: var(--baseFont);
+  max-inline-size: 59.375rem;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  margin: 0;
+}
+
+.hero-icons,
+.hero-side {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
   .hero {
     block-size: 180vh;
     background-size: 100%;
+  }
+
+  .hero-content {
+    margin-inline-end: 5rem;
+    margin-inline-start: 5rem;
+    justify-content: space-between;
+  }
+
+  .hero-description h1 {
+    font: var(--headline1);
+  }
+
+  .hero-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.375rem;
+  }
+
+  .hero-side {
+    display: block;
   }
 }
