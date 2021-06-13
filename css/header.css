@@ -17,6 +17,10 @@
   list-style: none;
 }
 
+.header-navigation ul li a {
+  color: var(--bg);
+}
+
 @supports not (backdrop-filter: blur(5px)) {
   .header {
     background: var(--accent);
