@@ -31,6 +31,16 @@
   margin-block-start: 0;
 }
 
+.section-title .section-tagline {
+  inline-size: 2px;
+  block-size: 72px;
+  background-color: var(--accent);
+  transform: rotate(90deg);
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+}
+
 .section-text {
   max-inline-size: 19.5rem;
 }
@@ -66,6 +76,11 @@
     position: absolute;
     top: -15rem;
     left: -8rem;
+  }
+
+  .section-title .section-tagline {
+    top: -6rem;
+    left: 3.3rem;
   }
 
   .section-text {
