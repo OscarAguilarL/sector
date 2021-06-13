@@ -8,6 +8,7 @@
 
 :root {
   font-size: 16px;
+  scroll-behavior: smooth;
   --baseFont: "Poppins", sans-serif;
   --bg: #0b1d26;
   --white: #ffffff;

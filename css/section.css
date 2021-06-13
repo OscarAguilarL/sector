@@ -51,7 +51,7 @@
     order: 2;
   }
 
-  .section-image {
+  .section-image img {
     inline-size: 35.375rem;
     block-size: 45rem;
   }
