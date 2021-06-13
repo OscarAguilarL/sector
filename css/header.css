@@ -1,5 +1,6 @@
 .header {
   padding-block-start: 1.5rem;
+  padding-block-end: 1.5rem;
   margin-block-end: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -23,7 +24,6 @@
 
 @supports not (backdrop-filter: blur(5px)) {
   .header {
-    padding-block-start: 0;
     background: var(--bg);
   }
 
