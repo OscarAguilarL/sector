@@ -1,0 +1,58 @@
+.section {
+  max-inline-size: auto;
+  margin-block-end: 8.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-image {
+  flex: 0;
+}
+
+.section-title h3 {
+  font: var(--bold);
+  font-size: 1.5rem;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.section-text {
+  max-inline-size: 19.5rem;
+}
+
+.section-text p {
+  font: var(--body);
+  color: var(--white);
+}
+
+.section-link img {
+  vertical-align: middle;
+}
+
+.section-link a {
+  color: var(--accent);
+  margin-inline-end: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7.125rem;
+  }
+
+  .section-text {
+    max-inline-size: 37rem;
+  }
+
+  .section:nth-of-type(odd) .section-image {
+    order: 2;
+  }
+
+  .section-image {
+    inline-size: 35.375rem;
+    block-size: 45rem;
+  }
+}
